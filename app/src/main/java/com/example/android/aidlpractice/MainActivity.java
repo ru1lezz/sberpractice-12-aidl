@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class MainActivity extends AppCompatActivity implements WriterFragment.OnFragmentInteractionListener{
+public class MainActivity extends AppCompatActivity implements WriterFragment.OnFragmentInteractionListener {
 
     private IDataInterface mDataInterface;
     private ReaderFragment mReaderFragment;
