@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements WriterFragment.On
         public void onServiceConnected(ComponentName name, IBinder service) {
             mDataInterface = IDataInterface.Stub.asInterface(service);
 
-            try{
+            try {
                 mReaderFragment.setValue(mDataInterface.getValue());
             } catch (RemoteException ex) {
                 Log.e(getClass().getName(), ex.getLocalizedMessage());
